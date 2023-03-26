@@ -19,7 +19,7 @@ const Home = () => (
                renderItem={({ item }) => <NftCard data={item} />}
                keyExtractor={(item) => item.id}
                showsVerticalScrollIndicator={false}
-            // ListHeaderComponent={<HomeHeader />}
+               ListHeaderComponent={<HomeHeader />}
             />
          </View>
 
