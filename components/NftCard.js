@@ -28,7 +28,11 @@ const NftCard = ({ data }) => {
                }}
             />
 
-            <CircleButton imgUrl={assets.heart} top={10} right={10} />
+            <CircleButton
+               imgUrl={assets.heart}
+               top={10}
+               right={10}
+            />
          </View>
 
          <SubInfo data={data} />
@@ -41,14 +45,12 @@ const NftCard = ({ data }) => {
                subTitleSize={SIZES.small}
             />
 
-            <View
-               style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  marginTop: SIZES.font,
-               }}
-            >
+            <View style={{
+               flexDirection: 'row',
+               alignItems: 'center',
+               justifyContent: 'space-between',
+               marginTop: SIZES.font,
+            }}>
                <EthPrice price={data.price} />
                <RectButton
                   minWidth={120}
