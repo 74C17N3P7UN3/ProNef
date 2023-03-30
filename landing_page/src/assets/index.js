@@ -8,7 +8,7 @@ import mockup from './mockup.png'
 import react from './react.png'
 import scene from './scene.png'
 
-export {
+export default {
    expo,
    expo02,
    feature,
