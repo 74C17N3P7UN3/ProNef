@@ -40,7 +40,7 @@ const Details = ({ route, navigation }) => {
          <FocusedStatusBar
             barStyle='dark-content'
             backgroundColor='transparent'
-            transLucent={true}
+            translucent={true}
          />
 
          <View style={{
@@ -73,15 +73,24 @@ const Details = ({ route, navigation }) => {
                   <View style={{ padding: SIZES.font }}>
                      <DetailsDesc data={data} />
 
-                     {data.bids.length > 0 && (
-                        <Text style={{
-                           fontFamily: FONTS.semiBold,
-                           fontSize: SIZES.font,
-                           color: COLORS.primary,
-                        }}>
-                           Current Bids
-                        </Text>
-                     )}
+                     {data.bids.length > 0
+                        ? (
+                           <Text style={{
+                              fontFamily: FONTS.semiBold,
+                              fontSize: SIZES.font,
+                              color: COLORS.primary,
+                           }}>
+                              Current Bids
+                           </Text>
+                        ) : (
+                           <Text style={{
+                              fontFamily: FONTS.semiBold,
+                              fontSize: SIZES.font,
+                              color: COLORS.primary,
+                           }}>
+                              No bids so far
+                           </Text>
+                        )}
                   </View>
                </>
             }
