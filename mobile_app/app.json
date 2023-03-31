@@ -1,7 +1,7 @@
 {
    "expo": {
       "name": "ProNef",
-      "slug": "ProNef",
+      "slug": "pronef",
       "version": "1.0.0",
       "orientation": "portrait",
       "icon": "./assets/icon.png",
@@ -15,16 +15,30 @@
          "**/*"
       ],
       "ios": {
-         "supportsTablet": true
+         "supportsTablet": true,
+         "bundleIdentifier": "com.tacitneptune.pronef"
       },
       "android": {
          "adaptiveIcon": {
             "foregroundImage": "./assets/adaptive-icon.png",
             "backgroundColor": "#ffffff"
-         }
+         },
+         "package": "com.tacitneptune.pronef"
       },
       "web": {
          "favicon": "./assets/favicon.png"
+      },
+      "extra": {
+         "eas": {
+            "projectId": "26f6bf3c-5cd1-48a3-a8a2-3293870a14f8"
+         }
+      },
+      "owner": "tacitneptune",
+      "runtimeVersion": {
+         "policy": "sdkVersion"
+      },
+      "updates": {
+         "url": "https://u.expo.dev/26f6bf3c-5cd1-48a3-a8a2-3293870a14f8"
       }
    }
 }
